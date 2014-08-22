@@ -52,7 +52,7 @@
      </testng>
  </target>
     
- <target name="xslt" depend="Run">
+ <target name="xslt" depends="Run">
                  
      <xslt in="${basedir}/testng_output/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/testng-xslt/index.html" processor="SaxonLiaison">
                         
